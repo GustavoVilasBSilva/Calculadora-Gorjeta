@@ -1,0 +1,353 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+/* ---Formatação Gral--- */
+
+body {
+	background: #F2F6FF;
+	font-size: 16px;
+	font-family: 'Mulish', sans-serif;
+}
+
+.container {
+	width: 80%;
+	max-width: 938px;
+	height: 432px;
+	margin: 200px auto;
+	border-radius: 24px;
+	background: #FFFFFF;
+}
+
+.grid {
+	display: grid;
+	grid-gap: 32px;
+	grid-template-columns: repeat(2, 1fr);
+
+}
+
+.section_form {
+	min-width: 80%;
+	max-width: 421px;
+	height: 368px;
+	margin: 32px 0 32px 32px;
+}
+
+.section_result{
+	min-width: 80%;
+	max-width: 421px;
+	height: 368px;
+	margin: 32px 32px 32px 0;
+	background-color: #E6F6F9;
+	border-radius: 24px;
+}
+
+.buttons {
+	display: grid;
+	grid-gap: 8px;
+	grid-template-columns: repeat(3, 1fr) ;
+}
+
+/* --- Input Text, Output --- */
+
+.input_text {
+	width: 100%;
+	max-width: 421px;
+	height: 52px;
+	padding-right: 15px;
+	margin-bottom: 37px;
+	border: none;
+	border-radius: 8px;
+	text-align: right;
+}
+
+.min_input_text {
+	width: 206%;
+	max-width: 278px;
+	height: 52px;
+	padding-right: 15px;
+	margin-bottom: 37px;
+	border: none;
+	border-radius: 8px;
+	text-align: right;
+}
+
+.border_red{
+	border-radius: 8px;
+	border: 1.5px solid #DF4A4A;
+}
+
+input.input_text:focus {
+   outline: #B1B9CC;
+   border-radius: 8px;
+   border: 1.5px solid #B1B9CC;
+}
+
+input.min_input_text:focus {
+   outline: #B1B9CC;
+   border-radius: 8px;
+   border: 1.5px solid #B1B9CC;
+}
+
+.min_input_text:hover, .input_text:hover {
+	border: 1.5px solid #B1B9CC;
+}
+
+.output {
+	background: url(icones/ZZ3.png) no-repeat #01A7C2;
+	background-size: 21px 20px;
+	background-position: 28px center;
+	display: block;
+	height: 52px;
+	margin: 0 32px;
+	padding: 16px 24px;
+	color: #FFFFFF;
+	text-align: right;
+	border-radius: 8px;
+}
+
+/* --- Icon Input_Output ---*/
+
+.icon_porcentagem{
+	background: url(icones/ZZ2.png) no-repeat #F2F6FF;
+	background-size: 20px 16px;
+	background-position: 28px center;
+}
+
+.icon_sifrao{
+	background: url(icones/ZZ.png) no-repeat #F2F6FF;
+	background-size: 21px 20px;
+	background-position: 28px center;
+}
+
+.icon_person {
+	background: url(icones/Vector.png) no-repeat #F2F6FF;
+	background-size: 16px 16px;
+	background-position: 28px center;
+}
+
+.icone_person_red{
+	background: url(icones/Vector2.png) no-repeat #F2F6FF;
+	background-size: 16px 16px;
+	background-position: 28px center;
+}
+
+/* --- Labels ---*/
+
+.label {
+	display: block;
+	margin-bottom: 8px;
+}
+
+.section_result .label {
+	display: block;
+	margin: 32px 32px 8px 32px;
+}
+
+.section_form span{
+	color: #DF4A4A;
+}
+
+/* --- Buttons ---*/
+
+.btn {
+	height: 52px;
+	width: 100%;
+	padding-top: 16px;
+	font-size: 16px;
+	font-weight: 700;
+	font-family: 'Mulish', sans-serif;
+	border: none;
+	border-radius: 8px;
+	color: #FFFFFF;
+	background: #01A7C2;
+	text-align: center;
+}
+
+.section_result .btn {
+    display: block;
+    width: 100%;
+    max-width: 166px;
+    padding-top: 16px;
+    margin: 41px auto 51px auto;
+    text-align: center;
+}
+
+.btn_escuro {
+	height: 52px;
+	width: 100%;
+	padding-top: 16px;
+	font-size: 16px;
+	font-weight: 700;
+	font-family: 'Mulish', sans-serif;
+	border: none;
+	border-radius: 8px;
+	color: #FFFFFF;
+	background: #0E7182;
+	text-align: center;
+}
+
+ .btn:hover {
+	background: #0E7182;
+}
+
+
+
+@media (min-width: 681px) and (max-width: 900px){
+	.output {
+		background-size: 19px 18px;
+		background-position: 16px center;
+	}
+
+	.label {
+		font-size: 14px;
+	}
+
+	.icon_porcentagem{
+		background: url(icones/ZZ2.png) no-repeat #F2F6FF;
+		background-size: 18px 14px;
+		background-position: 8px center;
+	}
+
+	.icon_sifrao{
+		background-size: 19px 18px;
+		background-position: 16px center;
+	}
+
+	.icon_person {
+		background-size: 16px 16px;
+		background-position: 19px center;
+	}
+	.icone_person_red{
+		background-size: 16px 16px;
+		background-position: 19px center;
+	}
+}
+
+
+
+
+@media (max-width: 680px){
+
+/* --- formatação Geral --- */
+	
+	.container {
+		position: relative;
+		width: 375px;
+		height: 714px;
+		margin: 0 auto;
+		border-radius: none;
+		background: #F2F6FF;
+	}
+
+	.section_form {
+		position: absolute;
+		max-width: 327px;
+		min-width: 327px;
+		height: 416px;
+		margin: 208px 24px;
+		padding: 16px;
+		border-radius: 24px;
+		background: #FFFFFF;
+	}
+
+	.section_result{
+		position: absolute;
+		width: 327px;
+		margin: 24px 24px;
+		padding: 0;
+		background: none;
+	}
+
+/* --- Input, Output --- */	
+	.min_input_text {
+		display: grid;
+		width: 210%;
+		height: 42px;
+		max-width: 295px;
+		padding-right: 15px;
+		margin-bottom: 40px;
+		font-size: 14px;
+	}
+
+	.input_text {
+		font-size: 14px;
+		height: 42px;
+		width: 100%;
+		max-width: 295px;
+		margin-bottom: 40px;
+	}
+
+	.output {
+		background-position: 16px center;
+		background-size: 19px 18px;
+		width: 327px;
+		height: 42px;
+		padding: 16px 24px;
+		margin: 0;
+		margin-bottom: 24px;
+	}
+
+/* icon Input, Output --- */
+
+	.icon_sifrao{
+		background-size: 19px 18px;
+		background-position: 16px center;
+	}
+
+	.icon_person {
+		background-size: 16px 16px;
+		background-position: 19px center;
+	}
+	.icone_person_red{
+		background-size: 16px 16px;
+		background-position: 19px center;
+	}
+
+	.icon_porcentagem{
+		background: url(icones/ZZ2.png) no-repeat  #F2F6FF;
+		background-size: 16px;
+		background-position: 16px center ;
+	}
+
+/* --- Label --- */	
+
+	.label {
+		font-size: 14px;
+	}
+
+	.section_forme .label {
+		padding: 16px 16px;
+	}
+
+
+	.section_result .label {
+		display: block;
+		margin: 0px;
+		margin-bottom: 8px;
+	}
+
+/* --- Buttons --- */
+
+	.section_result a.btn {
+		width: 160px;
+		height: 42px;
+		margin: 464px auto;
+		padding: 11px;
+	}
+
+	.buttons {
+		margin: 0;
+		display: grid;
+		grid-gap: 8px;
+		grid-template-columns: repeat(2, 1fr) ;
+	}
+
+	.btn {
+		height: 42px; 
+		width: 143px;
+		padding-top: 11px;
+	}
+}
+
