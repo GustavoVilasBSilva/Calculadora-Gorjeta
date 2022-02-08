@@ -154,15 +154,14 @@ input.min_input_text:focus {
 .btn {
 	height: 52px;
 	width: 100%;
-	padding-top: 16px;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 700;
 	font-family: 'Mulish', sans-serif;
-	border: none;
+	border: none ;
 	border-radius: 8px;
 	color: #FFFFFF;
 	background: #01A7C2;
-	text-align: center;
+
 }
 
 .section_result .btn {
@@ -175,21 +174,14 @@ input.min_input_text:focus {
 }
 
 .btn_escuro {
-	height: 52px;
-	width: 100%;
-	padding-top: 16px;
-	font-size: 16px;
-	font-weight: 700;
-	font-family: 'Mulish', sans-serif;
-	border: none;
-	border-radius: 8px;
-	color: #FFFFFF;
 	background: #0E7182;
-	text-align: center;
 }
 
  .btn:hover {
 	background: #0E7182;
+}
+.btn_escuro:hover {
+	border: 1px solid black;
 }
 
 

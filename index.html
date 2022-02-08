@@ -21,17 +21,17 @@
 		<section class="grid">
 			<form id="formulario" class="section_form">
 				<label class="label">Dígite o valor total do pedido<span>*</span></label>
-				<input id="valor_pedido" class="input_text icon_sifrao" type="text" placeholder="Dígite o valor aqui">
+				<input type="text" placeholder="Dígite o valor aqui" onclick="remove(1)" id="valor_pedido" class="input_text icon_sifrao" >
 				<label class="label">Quanto quer dar de gorjeta?<span>*</span></label>
 				<div class="buttons">
-					<a onclick="button('btn', '5')" id="5" class="btn">5%</a>
-					<a onclick="button('btn', '10')" id="10" class="btn">10%</a>
-					<a onclick="button('btn', '15')" id="15" class="btn">15%</a>
-					<a onclick="button('btn', '25')" id="25" class="btn">25%</a>
-					<input onblur="button('text', document.getElementById('porcentagem').value)" id="porcentagem" class="min_input_text icon_porcentagem" type="text" placeholder="Personalize aqui" value="" >
+					<input type="button" value="5%" onclick="button(5)" id="5" class="btn">
+					<input type="button" value="10%" onclick="button(10)" id="10" class="btn">
+					<input type="button" value="15%" onclick="button(15)" id="15" class="btn">
+					<input type="button" value="25%" onclick="button(25)" id="25" class="btn">
+					<input type="text" value="" onclick="button()" id="porcentagem" placeholder="Personalize aqui"   class="min_input_text icon_porcentagem" >
 				</div>
 				<label class="label">Quantas pessoas irão pagar?<span>*</span></label>
-				<input id="quantidade_pessoas" class="input_text icon_person" type="text" placeholder="Dígite o valor aqui" value="">
+				<input id="quantidade_pessoas" class="input_text icon_person" onclick="remove(2)" type="text" placeholder="Dígite o valor aqui" value="">
 			</form>
 			<form class="section_result">
 				<label class="label">Valor total da gorjeta</label>
